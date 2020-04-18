@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page with Webpack</title>
+</head>
+<body>
+    <div class="large-hero">
+        <!-- Responsive images--resolutation switching case -->
+        <img class="large-hero__image"  
+            srcset="assets/images/pp-500.jpg 500w, 
+                    assets/images/pp-800.jpg 800w, 
+                    assets/images/pp.jpg 1920w"
+            sizes="(max-width: 500px) 500px, 
+                    (max-width: 800px) 800px, 
+                    1920px" 
+            alt="Phnom Penh at night.">
+        <div class="large-hero__text-content">
+            <h1 class="large-hero__title">Starter Page with WebPack</h1>
+            <p class="large-hero__subtitle">Verson-controlled starter file for my static web page design for future projects.</p>
+        </div>
+    </div>
+    <script src="bundled.js"></script>
+</body>
+</html>
